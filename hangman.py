@@ -12,7 +12,6 @@ play = True
 f = open("random_words", "r")
 if f.mode == "r":
     word_list = f.read().splitlines()
-    print(word_list)
 
 while play is True:
     # variables go in the loop in order to reset their value in each 'game'
@@ -37,7 +36,6 @@ while play is True:
     # randomizing the selected words
     shuffle(select_words)
     word_to_guess = select_words[0]
-    print(word_to_guess)
 
     # start the guessing game
     incognito_word = '*' * int(word_size)
